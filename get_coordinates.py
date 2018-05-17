@@ -9,12 +9,12 @@ api = tweepy.API(auth)
 def search_by_location(latitude, longitude, radius, number_of_tweets):
 
     lat = str(latitude)
-    long = str(longitude)
+    lon = str(longitude)
     # radius distance should be given in kilometers
     dis = str(radius)
     num = int(number_of_tweets)
 
-    tweets = tweepy.Cursor(api.search, geocode=lat+','+long+','+dis+"km").items(num)
+    tweets = tweepy.Cursor(api.search, geocode=lat+','+lon+','+dis+"km").items(num)
 
     for tweet in tweets:
         data = json.dumps(tweet._json)
