@@ -35,6 +35,7 @@ def search_by_location(latitude, longitude, radius, number_of_tweets):
     file.write(json_list)
     file.close()
 
+    
 def search_by_query(search_term, number_of_tweets):
     query = str(search_term)
     num = int(number_of_tweets)
