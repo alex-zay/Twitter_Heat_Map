@@ -13,27 +13,8 @@ body {
   margin-bottom: 40px;
 }
 
-#search_form {
+#search {
   margin-bottom: 10px;
-}
-
-#bar {
-  border: 3px solid white;
-  width: 130px;
-  height: 30px;
-  background: rgba(255, 255, 255, 0.5);
-  font-size: 13px;
-  color: white;
-  padding-left: 2px;
-}
-
-#bar:focus {
-  outline: none;
-}
-
-::placeholder {
-  color: white;
-  padding-left: 2px;
 }
 
 #footer {
